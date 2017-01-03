@@ -1,0 +1,11 @@
+<section class="welcome">
+  <h1 ng-show="$ctrl.isAdmin">您好，欢迎使用！</h1>
+
+  <form ng-hide="$ctrl.isAdmin" ng-submit="$ctrl.login($event)">
+    <p ng-show="$ctrl.error">{{$ctrl.error}}</p>
+    <div class="input-group">
+      <input class="input" type="password" name="password">
+      <button class="btn">芝麻开门</button>
+    </div>
+  </form>
+</section>

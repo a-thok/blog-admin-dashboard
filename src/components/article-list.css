@@ -1,0 +1,24 @@
+.article-list {
+  width: 100%;
+  margin-top: .4em;
+  border-collapse: collapse;
+  font-size: .9375rem;
+}
+
+.article-list th,
+.article-list td {
+  padding: .8em;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.article-list th:nth-child(3),
+.article-list td:nth-child(3),
+.article-list th:last-child,
+.article-list td:last-child {
+  text-align: center;
+}
+
+.article-list th {
+  border-bottom: 1px solid var(--fade-color);
+}

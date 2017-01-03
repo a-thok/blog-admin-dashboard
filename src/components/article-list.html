@@ -1,0 +1,26 @@
+<table class="article-list">
+  <thead>
+    <tr>
+      <th>日期</th>
+      <th>标题</th>
+      <th>公开</th>
+      <th>操作</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="article in $ctrl.articles">
+      <td>{{article.createdAt.slice(0, 10)}}</td>
+      <td>{{article.title}}</td>
+      <td>
+        <label class="switcher">
+          <input type="checkbox" ng-model="article.open" ng-change="$ctrl.switchArticleOpenState(article._id, article.open)">
+          <i></i>
+        </label>
+      </td>
+      <td>
+        <button class="btn" ng-click="$ctrl.editArticle(article._id)">编辑</button>
+        <button class="btn danger" ng-click="$ctrl.removeArticle(article._id)">删除</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

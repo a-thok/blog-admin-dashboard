@@ -1,0 +1,14 @@
+<form class="write-form" ng-submit="$ctrl.submit($event)">
+  <input
+    class="input block" type="text" name="title" placeholder="文章标题"
+    ng-model="$ctrl.article.title" required
+  >
+  <textarea
+    class="input block" name="content" placeholder="文章内容" required
+    ng-model="$ctrl.article.content"></textarea>
+  <input
+    class="input block" type="text" name="tags" placeholder="多个标签使用半角逗号分隔"
+    ng-model="$ctrl.article.tags"
+  >
+  <button class="btn lg">提交</button>
+</form>

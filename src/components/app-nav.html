@@ -1,0 +1,10 @@
+<nav class="app-nav">
+  <a
+    ng-repeat="route in $ctrl.routes"
+    href="{{'#!' + route.path}}"
+    class="app-nav-link" ng-class="{active: $ctrl.isCurrentRoute(route.path)}"
+  >
+    <i class="fa" ng-class="route.icon"></i>
+    <span>{{route.name}}</span>
+  </a>
+</nav>

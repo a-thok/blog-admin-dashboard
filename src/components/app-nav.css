@@ -1,0 +1,42 @@
+.app-nav {
+  display: flex;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #ecf0f1;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.app-nav-link {
+  display: block;
+  border-bottom: 0;
+  padding: 1em;
+  color: #bdc3c7;
+  white-space: nowrap;
+  text-align: center;
+  transition: color .3s, border-color .3s;
+}
+
+.app-nav-link .fa {
+  margin-right: 0.5em;
+}
+
+.app-nav-link.active {
+  border-color: #3498db;
+  color: inherit;
+}
+
+@media (min-width: 768px) {
+  .app-nav {
+    display: block;
+    height: 100%;
+    border-width: 0 1px 0 0;
+  }
+
+  .app-nav-link {
+    padding: 0 2.4em 0 1.25em;
+    border-left: 3px solid transparent;
+    margin: 1em 0;
+    text-align: left;
+  }
+}
