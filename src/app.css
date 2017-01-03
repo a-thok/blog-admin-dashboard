@@ -11,7 +11,6 @@ html {
 }
 
 body {
-  min-height: 100vh;
   margin: 0;
   color: #34495e;
   font-family: 'San Francisco', Helvetica, Arial, 'Microsoft Yahei', 'PingFang SC', 'Heiti SC', sans-serif;
@@ -162,13 +161,17 @@ textarea.input {
 /*
  * APP
  */
+.app {
+  min-height: 100vh;
+}
+
 .admin-body {
   padding: 0 1.25em;
   margin: 0 auto;
 }
 
 @media (min-width: 768px) {
-  body {
+  .app {
     display: flex;
   }
 

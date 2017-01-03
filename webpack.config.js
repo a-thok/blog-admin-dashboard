@@ -4,13 +4,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const postcssVariables = require('postcss-css-variables');
+const NgAnnotatePlugin = require('ng-annotate-webpack-plugin');
 
 const isProd = process.env.NODE_ENV === 'production';
 
 module.exports = {
   entry: {
     style: './src/blog-style.css',
-    app: './src',
+    app: './src/app.module',
   },
 
   output: {
@@ -42,7 +43,7 @@ module.exports = {
     extensions: ['.js'],
   },
 
-  externals: ['angular', 'angular-route'],
+  externals: ['angular'],
 
   performance: {
     hints: isProd ? 'warning' : false,
@@ -96,6 +97,9 @@ module.exports = {
     new ExtractTextPlugin('css/[name].css'),
     new webpack.LoaderOptionsPlugin({
       minimize: true,
+    }),
+    new NgAnnotatePlugin({
+      add: true,
     }),
     new webpack.optimize.UglifyJsPlugin({
       compress: {

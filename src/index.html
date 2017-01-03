@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cmn-Hans" ng-app="app" ng-controller="appCtrl as $ctrl">
+<html lang="zh-cmn-Hans" ng-app="app">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
@@ -7,10 +7,9 @@
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
 </head>
 <body>
-  <app-nav is-admin="$ctrl.isAdmin"></app-nav>
-  <section class="admin-body" ng-view></section>
+  <app class="app"></app>
 
   <script src="node_modules/angular/angular.js"></script>
-  <script src="node_modules/angular-route/angular-route.js"></script>
+  <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
 </body>
 </html>

@@ -22,3 +22,16 @@
 .article-list th {
   border-bottom: 1px solid var(--fade-color);
 }
+
+
+.article-pager {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0;
+  /*border-top: 1px solid var(--fade-color);*/
+  margin-top: 2em;
+}
+
+.article-pager .fa {
+  padding: 0 0.4em;
+}
