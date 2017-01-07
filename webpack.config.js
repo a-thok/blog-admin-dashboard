@@ -10,7 +10,6 @@ const isProd = process.env.NODE_ENV === 'production';
 
 module.exports = {
   entry: {
-    style: './src/blog-style.css',
     app: './src/app.module',
   },
 
