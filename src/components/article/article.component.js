@@ -15,9 +15,11 @@ export const articleComponent = {
       };
       this.id = $state.params.id;
       this.ArticleService = ArticleService;
+    }
 
+    $onInit() {
       if (this.id) {
-        ArticleService
+        this.ArticleService
           .getArticle(this.id)
           .then((res) => {
             const { result } = res.data;
