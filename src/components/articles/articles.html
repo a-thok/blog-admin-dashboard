@@ -26,6 +26,10 @@
 </table>
 
 <nav class="article-pager">
-  <a href="#"><i class="fa fa-angle-left"></i>上一页</a>
-  <a href="#">下一页<i class="fa fa-angle-right"></i></a>
+  <a href="#" ng-click="$ctrl.prevPage($event)" ng-hide="$ctrl.isFirstPage">
+    <i class="fa fa-angle-left"></i>上一页
+  </a>
+  <a href="#" ng-click="$ctrl.nextPage($event)" ng-hide="$ctrl.isLastPage">
+    下一页<i class="fa fa-angle-right"></i>
+  </a>
 </nav>

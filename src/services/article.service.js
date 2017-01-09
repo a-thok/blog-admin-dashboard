@@ -5,8 +5,8 @@ export class ArticleService {
     this.$http = $http;
   }
 
-  getArticles() {
-    return this.$http.get('/article/json?page=1');
+  getArticles(page) {
+    return this.$http.get(`/article/json?page=${page}`);
   }
 
   getArticle(id) {
