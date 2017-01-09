@@ -79,8 +79,8 @@ module.exports = {
               '--main-colour': '#3498db',
               '--main-colour-dark': '#2980b9',
 
-              '--fade-color': '#ecf0f1',
-              '--fade-color-dark': '#bdc3c7',
+              '--fade-colour': '#ecf0f1',
+              '--fade-colour-dark': '#bdc3c7',
 
               '--danger-colour': '#e74c3c',
               '--danger-colour-dark': '#c0392b',
